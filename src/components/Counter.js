@@ -4,6 +4,7 @@ import {
   decrement,
   increment,
   incrementByAmount,
+  resetCounter,
   incrementAsync,
   incrementIfOdd,
   selectCount,
@@ -60,6 +61,12 @@ export const Counter = () => {
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => dispatch(resetCounter())}
+        >
+          Reset Counter
         </button>
       </div>
     </div>
